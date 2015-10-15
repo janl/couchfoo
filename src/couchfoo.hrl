@@ -16,11 +16,11 @@
 -define(DEFAULT_HEADER_COUNT, 3).
 
 %% copied from Apache CouchDB's couch_db.hrl
--define(LATEST_DISK_VERSION, 5).
+-define(LATEST_DISK_VERSION, 6).
 
 %% copied from Apache CouchDB's couch_db.hrl
--record(db_header, {
-     disk_version = ?LATEST_DISK_VERSION,
+-record(db_header,
+    {disk_version = ?LATEST_DISK_VERSION,
      update_seq = 0,
      unused = 0,
      fulldocinfo_by_id_btree_state = nil,
